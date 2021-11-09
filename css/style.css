@@ -1,0 +1,119 @@
+.container {
+  font-family: 'Circular-Std-Book';
+  padding: 1% 5% 2% 5%; }
+  .container > div {
+    padding: 1%; }
+
+#selected_image, #miniature_list button {
+  border-radius: 0.5rem; }
+
+#selected_image, #miniature_list button {
+  align-content: center;
+  display: grid;
+  border: 2px #f0f0f0 solid;
+  background-color: #ffffff;
+  margin-bottom: 2rem; }
+  #selected_image img, #miniature_list button img {
+    max-width: 70%;
+    margin: auto; }
+  #selected_image:hover, #miniature_list button:hover {
+    border: 2px #6b7381 solid !important; }
+  #selected_image:focus, #miniature_list button:focus {
+    box-shadow: 0px 0px 0px 5px #c4bdc7;
+    border: none; }
+
+#miniature_list {
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+#product_name h1 {
+  font-family: 'Circular-Std-bold';
+  margin-bottom: 0.7rem; }
+#product_name h2 {
+  color: #6b7381; }
+#product_name p {
+  color: #d64d60 !important; }
+
+#product_base_price p {
+  color: #6b7381;
+  font-size: 0.75rem; }
+
+.hide-element {
+  display: none; }
+
+.visible {
+  display: block; }
+
+h1, h2, p {
+  margin-top: 0px; }
+
+h1 {
+  font-family: 'Circular-Std-bold';
+  font-size: 2.5rem; }
+
+.selected {
+  border: 2px #1897d5 solid !important; }
+
+#details .tab-button-container button {
+  border: none;
+  background-color: #ffffff;
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #6b7381; }
+  #details .tab-button-container button:hover {
+    cursor: pointer; }
+  #details .tab-button-container button.active {
+    text-decoration: underline; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0; }
+
+@font-face {
+  font-family: 'Circular-Std-Book';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../resources/fonts/Circular-Std-Book.otf"); }
+@font-face {
+  font-family: 'Circular-Std-medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../resources/fonts/Circular-Std-Medium.otf"); }
+@font-face {
+  font-family: 'Circular-Std-bold';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../resources/fonts/Circular-Std-Bold.otf"); }
+.my-row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.margin-0 {
+  margin: 0rem; }
+
+.margin-1 {
+  margin: 0.5rem; }
+
+.margin-2 {
+  margin: 1rem; }
+
+.my-col-3 {
+  width: 29%; }
+
+.my-col-5 {
+  width: 48%; }
+
+.my-col-10 {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  .my-col-md-5 {
+    width: 48%; }
+
+  .my-col-md-10 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

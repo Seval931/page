@@ -1,0 +1,195 @@
+/*----------------------------------
+----------------Buttons--------------
+------------------------------------*/
+.btn {
+    transition: 0.3s all;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &.btn-main{
+
+        background-color: $white;
+        font-family: 'maven-pro-bold';
+        box-shadow: 0px 5px 5px 0px rgba($black, 0.3);
+        transition: 0.3s all;
+        border: none;
+        color: $blue-light;
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: $blue-light;
+            color: $white !important;
+        }
+
+    }
+
+    &.btn-pack-cover {
+        background-color: $gray-semilight;
+        color: $blue-light;
+        font-size: 1.5em;
+        font-family: 'maven-pro-bold';
+
+        box-shadow: 0px 5px 5px 0px rgba($black, 0.3);
+
+        transition: 0.3s all;
+
+        &.btn-section-cover {
+          background-color: $white;
+          color: $blue-medium;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+    }
+
+    &.btn-phase {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 20px;
+        background-color: $blue-ultralight;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        box-shadow: 5px 5px 10px 2px rgba($black, 0.3);
+
+        h1 {
+            color: $blue-dark;
+            font-family: 'maven-pro-regular';
+            text-align: left;
+            line-height: 1.1;
+            margin: 0 20px 0 20px;
+            font-size: 1.3em;
+        }
+        b {
+            font-family: 'maven-pro-bold';
+        }
+
+        .phase-logo {
+            border-radius: 50%;
+            min-width: 90px;
+            height: 90px;
+            transition: 0.3s all;
+        }
+
+        &.magenta{
+            background-color: $magenta-ultralight;
+
+            .phase-logo {
+                background-color:  $magenta-semilight !important;
+            }
+
+            &:hover {
+                background-color: $blue-medium;
+
+                h1 {
+                    color: $white;
+                }
+
+                .phase-logo {
+                    background-color: $blue-ultralight !important;
+                }
+            }
+
+        }
+        
+        &.text-audio{
+            .phase-logo {
+                background: url("#{$images-path}img_text_audio.png") no-repeat center center/60%;
+            }
+        }
+        &.download-doc{
+            .phase-logo {
+                background: url("#{$images-path}img_text_doc.png") no-repeat center center/60%;
+                background-color: $blue-light;
+            }
+        }
+    }
+
+    &.btn-return {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .return-title {
+            font-family: 'maven-pro-bold';
+            color: $magenta-medium;
+            font-size: 1.3em;
+        }
+    }
+
+    &.btn-audio-play {
+        margin: 1em 0;
+        width: 70px;
+        height: 70px;
+        background-image: url($images-path + 'btn_sound.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        border-radius: 50%;
+        border: 2px solid $white;
+        box-shadow: 5px 5px 10px 2px rgba($black, 0.3);
+
+        &.magenta {
+            background-color: $magenta-medium;
+            &:hover{
+                background-color: $blue-medium;
+            }
+        }
+    }
+
+    &.btn-question{
+        margin: 1em 0;
+        width: 100px;
+        height: 100px;
+        background-image: url($images-path + 'btn_question.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 99%;
+        border-radius: 50%;
+        border: 2px solid $white;
+        box-shadow: 5px 5px 10px 2px rgba($black, 0.3);
+    }
+
+    &.btn-download{
+        margin: 1em 0;
+        width: 70px;
+        height: 70px;
+        background-image: url($images-path + 'btn_download.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 50%;
+        border: 2px solid $white;
+        box-shadow: 5px 5px 10px 2px rgba($black, 0.3);
+
+    }
+
+    &.btn-download-big{
+        margin: 1em 0;
+        width: 150px;
+        height: 150px;
+        background-image: url($images-path + 'img-download.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        border-radius: 50%;
+        border: 2px solid $white;
+        box-shadow: 5px 5px 10px 2px rgba($black, 0.3);
+        &.blue-light{
+            background-color: $blue-light;
+            &:hover{
+                background-color: $blue-semidark !important;
+            }
+        }
+        &.blue-semilight{
+            background-color: $blue-semilight;
+            &:hover{
+                background-color: $blue-semidark !important;
+            }
+        }
+    }
+}
